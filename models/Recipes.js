@@ -12,12 +12,15 @@ const RecipesSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    description: {
+        type: String,
+        required: true
+    },
 
     ingredients: {
         type: Array,
         required: true,
     },
-
     tags: {
         type: Array,
         required: true
