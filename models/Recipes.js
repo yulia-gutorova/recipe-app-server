@@ -12,6 +12,7 @@ const RecipesSchema = mongoose.Schema({
         type: String,
         required: true
     },
+
     description: {
         type: String,
         required: true
@@ -21,10 +22,12 @@ const RecipesSchema = mongoose.Schema({
         type: Array,
         required: true,
     },
+
     tags: {
         type: Array,
         required: true
     },
+    
     cookTime: {
         type: Number,
         required: true
