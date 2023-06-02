@@ -45,6 +45,7 @@ exports.createRecipe = async (req, res) => {
         const newRecipe = new Recipes({
             type: req.body.type,
             name: req.body.name,
+            description: req.body.description,
             ingredients: req.body.ingredients,
             tags: req.body.tags,
             cookTime: req.body.cookTime,
@@ -83,6 +84,7 @@ exports.updateRecipe = async (req, res) => {
                 $set: {
                     type: req.body.type,
                     name: req.body.name,
+                    description: req.body.description,
                     ingredients: req.body.ingredients,
                     tags: req.body.tags,
                     cookTime: req.body.cookTime,
